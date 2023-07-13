@@ -22,15 +22,12 @@ required-features = ["pem"]
 [dependencies]
 yasna = { version = "0.5.2", features = ["time", "std"] }
 pem = { version = "2.0.1", optional = true }
+ring = "0.16"
 time = { version = "0.3.6", default-features = false }
 x509-parser = { version = "0.15", features = ["verify"], optional = true }
 zeroize = { version = "1.2", optional = true }
 
-[dependencies.ring]
-git = 'https://github.com/briansmith/ring'
-version = "0.16"
-
-[patch.'https://github.com/briansmith/ring']
+[patch.ring]
 ring = {git = 'https://github.com/jedisct1/ring-wasi'}
 
 [features]
