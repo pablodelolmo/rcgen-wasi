@@ -2191,7 +2191,7 @@ impl From<ring::error::Unspecified> for RcgenError {
 
 impl From<ring::error::KeyRejected> for RcgenError {
 	fn from(err :ring::error::KeyRejected) -> Self {
-		RcgenError::RingKeyRejected(err.to_string().as_str()))
+		RcgenError::RingKeyRejected(err.to_string().as_str())
 	}
 }
 
