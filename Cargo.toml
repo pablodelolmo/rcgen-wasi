@@ -11,7 +11,7 @@ readme = "README.md"
 keywords = ["mkcert", "ca", "certificate"]
 
 [lib]
-name = "rcgen-wasi"
+name = "rcgen"
 path = "src/lib.rs"
 
 [[bin]]
